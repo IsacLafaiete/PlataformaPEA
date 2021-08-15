@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>PEA - Cadastre-se</title>
+        <link rel="shortcut icon" type="image/x-icon" href="../imagens/logo-login.png">
+        <link rel="stylesheet" type="text/css" href="../css/main.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+        <nav class="menu">
+            <a href="../index.html"><img class="img-menu" src="../imagens/logo-pea.png"></a>
+            <ul>
+                <li><a href="../index.html">INÍCIO</a></li>
+                <li><a href="sobre.html">SOBRE</a></li>
+                <li><a href="contato.html">ENTRE EM <br> CONTATO</a></li>
+            </ul>
+            <ul>
+                <li><a href="login.html">LOG IN</a></li>
+            </ul>
+        </nav>
+        <section class="section-login">
+            <img src="../imagens/logo-login.png" alt="Logo da plataforma" class="img-login">
+            <h1 class="titulo-login">Cadastre-se</h1>
+            <form method="POST" action="../php/login.php" id="form-login">
+                <section class="conteudo-login">
+                    <label for="usuario">Usuário</label>
+                    <input type="text" name="usuario" id="usuario" placeholder="Ex: isaclafaiete">
+                </section>
+                <section class="conteudo-login">
+                    <label for="usuario">Endereço de email</label>
+                    <input type="email" name="email" id="email" placeholder="Ex: isaclafaiete@dominio.com">
+                </section>
+                <section class="conteudo-login">
+                    <div>
+                        <label for="senha">Senha</label>
+                    </div>
+                    <input type="password" name="senha" id="senha">
+                </section>
+                <button type="submit">Enviar</button>
+            </form>
+            <p>Já tem conta? <a href="login.html">Entre agora.</a></p>
+        </section>
+        <footer class="rodape">
+            <div class="rodape-conteudo">
+                <div class="rodape-conteudo-parte1">
+                    <h3>Parte 1</h3>
+                    <p>oi</p>
+                </div>
+                <div class="rodape-conteudo-parte2">
+                    <h3>Parte 2</h3>
+                    <p>io</p>
+                </div>
+            </div>
+            <div class="rodape-copyright">
+                <p>©2021 Todos os direitos reservados a Isac Lafaiete</p>
+            </div>
+        </footer>
+    </body>
+</html>
