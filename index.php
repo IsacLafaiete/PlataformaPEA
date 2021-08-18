@@ -42,22 +42,23 @@
             <div class="porta-cards-home">
                 <a href="./paginas/conteudos/portugues.php">
                     <div class="card-home">
-                        <p>Português</p>
+                        <h2>Português</h2>
+
                     </div>
                 </a>
                 <a href="./paginas/conteudos/historia.php">
                     <div class="card-home">
-                        <p>História</p>
+                        <h2>História</h2>
                     </div>
                 </a>
                 <a href="./paginas/conteudos/geografia.php">
                     <div class="card-home">
-                        <p>Geografia</p>
+                        <h2>Geografia</h2>
                     </div>
                 </a>
                 <a href="./paginas/conteudos/biologia.php">
                     <div class="card-home">
-                        <p>Biologia</p>
+                        <h2>Biologia</h2>
                     </div>
                 </a>
             </div>
