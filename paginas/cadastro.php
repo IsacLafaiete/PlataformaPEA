@@ -1,6 +1,18 @@
+<?php
+    session_start();
+    $logado = $_SESSION['logado'] ?? NULL;
+
+    if (isset($_GET['logout']) && $_GET['logout'] == 1){
+        $_SESSION = array();
+        session_unset();
+        session_destroy();
+        header('Location: login.php');
+    }
+?>
+
 <html>
     <head>
-        <title>PEA - Cadastre-se</title>
+        <title>PEA | Cadastre-se</title>
         <link rel="shortcut icon" type="image/x-icon" href="../imagens/logo-login.png">
         <link rel="stylesheet" type="text/css" href="../css/main.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -9,26 +21,29 @@
     </head>
     <body>
         <nav class="menu">
-            <a href="../index.html"><img class="img-menu" src="../imagens/logo-pea.png"></a>
+            <a href="../index.php"><img class="img-menu" src="../imagens/logo-pea.png"></a>
             <ul>
-                <li><a href="../index.html">INÍCIO</a></li>
-                <li><a href="sobre.html">SOBRE</a></li>
-                <li><a href="contato.html">ENTRE EM <br> CONTATO</a></li>
+                <li><a href="../index.php">INÍCIO</a></li>
+                <li><a href="materias.php">TEXTOS</a></li>
+                <li><a href="sobre.php">SOBRE</a></li>
             </ul>
             <ul>
-                <li><a href="login.html">LOG IN</a></li>
+                <?php
+                    if (!$logado) echo "<li><a class='ativa' href='login.php'>CADASTRO</a></li>";
+                    else echo "<li><a href='?logout=1'>SAIR</a></li>";
+                ?>
             </ul>
         </nav>
         <section class="section-login">
             <img src="../imagens/logo-login.png" alt="Logo da plataforma" class="img-login">
             <h1 class="titulo-login">Cadastre-se</h1>
-            <form method="POST" action="../php/login.php" id="form-login">
+            <form method="POST" action="../php/cadastro.php" id="form-login">
                 <section class="conteudo-login">
                     <label for="usuario">Usuário</label>
                     <input type="text" name="usuario" id="usuario" placeholder="Ex: isaclafaiete">
                 </section>
                 <section class="conteudo-login">
-                    <label for="usuario">Endereço de email</label>
+                    <label for="email">Endereço de email</label>
                     <input type="email" name="email" id="email" placeholder="Ex: isaclafaiete@dominio.com">
                 </section>
                 <section class="conteudo-login">
@@ -39,22 +54,17 @@
                 </section>
                 <button type="submit">Enviar</button>
             </form>
-            <p>Já tem conta? <a href="login.html">Entre agora.</a></p>
+            <p>Já tem conta? <a href="login.php">Entre agora.</a></p>
         </section>
+        <div id="mensagem">
+            <?php
+                echo $_SESSION['mensagem'];
+                unset($_SESSION['mensagem']);
+            ?>
+        </div>
+        <script src="../js/efeitos.js"></script>
         <footer class="rodape">
-            <div class="rodape-conteudo">
-                <div class="rodape-conteudo-parte1">
-                    <h3>Parte 1</h3>
-                    <p>oi</p>
-                </div>
-                <div class="rodape-conteudo-parte2">
-                    <h3>Parte 2</h3>
-                    <p>io</p>
-                </div>
-            </div>
-            <div class="rodape-copyright">
-                <p>©2021 Todos os direitos reservados a Isac Lafaiete</p>
-            </div>
+            <?php include_once "../templates/rodape.php" ?>
         </footer>
     </body>
 </html>
