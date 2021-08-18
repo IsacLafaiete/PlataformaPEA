@@ -55,11 +55,11 @@
                 <div id="porta-cards-contatos">
                     <div class="card-contatos">
                         <p>Nosso projeto está guardado em um repositório no GitHub e que pode ser acessado no link a seguir:</p>
-                        <a href="https://github.com/IsacLafaieite/..."><button class="ponteiro">GitHub</button></a>
+                        <a href="https://github.com/IsacLafaiete/PlataformaPEA.git"><button class="ponteiro">GitHub</button></a>
                     </div>
                     <div class="card-contatos">
                         <p>Caso tenham alguma dúvida, crítica ou sugestão, mande-nos uma mensagem pelo email:</p>
-                        <a href=""><button>isaclafaiete@dominio.com</button></a>
+                        <button>isaclafaiete09@gmail.com</button>
                     </div>
                 </div>
             </div>

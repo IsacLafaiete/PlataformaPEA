@@ -43,22 +43,25 @@
                 <a href="./paginas/conteudos/portugues.php">
                     <div class="card-home">
                         <h2>Português</h2>
-
+                        <p>oi</p>
                     </div>
                 </a>
                 <a href="./paginas/conteudos/historia.php">
                     <div class="card-home">
                         <h2>História</h2>
+                        <p>oi</p>
                     </div>
                 </a>
                 <a href="./paginas/conteudos/geografia.php">
                     <div class="card-home">
                         <h2>Geografia</h2>
+                        <p>Saiba como se orientar melhor usando a Rosa dos Ventos.</p>
                     </div>
                 </a>
                 <a href="./paginas/conteudos/biologia.php">
                     <div class="card-home">
                         <h2>Biologia</h2>
+                        <p>Fique sabendo um pouco mais sobre a água e os sais minerais.</p>
                     </div>
                 </a>
             </div>
