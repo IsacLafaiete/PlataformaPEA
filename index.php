@@ -43,13 +43,13 @@
                 <a href="./paginas/conteudos/portugues.php">
                     <div class="card-home">
                         <h2>Português</h2>
-                        <p>oi</p>
+                        <p>Tem muitas dúvidas sobre as classes gramaticais da nossa lingua? Então aprenda agora sobre elas.</p>
                     </div>
                 </a>
                 <a href="./paginas/conteudos/historia.php">
                     <div class="card-home">
                         <h2>História</h2>
-                        <p>oi</p>
+                        <p>Venha conhecer mais sobre os períodos mais estudados da história mundial.</p>
                     </div>
                 </a>
                 <a href="./paginas/conteudos/geografia.php">
@@ -66,6 +66,13 @@
                 </a>
             </div>
         </section>
+        <div id="mensagem">
+            <?php
+                echo $_SESSION['mensagem'];
+                unset($_SESSION['mensagem']);
+            ?>
+        </div>
+        <script src="./js/efeitos.js"></script>
         <footer class="rodape">
             <?php include_once "./templates/rodape.php" ?>
         </footer>

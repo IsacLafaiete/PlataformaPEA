@@ -207,6 +207,7 @@ body {
 .card-home p {
     font-size: 20px;
     padding: 0 1rem;
+    text-align: justify;
 }
 
 .card-home:hover {
@@ -342,6 +343,7 @@ body {
 
 .conteudo-cursos ul li {
     font-size: 18px;
+    padding: 0.3rem 0;
 }
 
 .tela {

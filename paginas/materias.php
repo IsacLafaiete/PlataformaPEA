@@ -43,9 +43,8 @@
         <section class="conteudo-textos">
             <div>
                 <h2>Português</h2>
-                <p>
-                    Olá! Acredito que se chegou a esta página é porque deseja saber mais sobre o projeto, então aqui está. O projeto Plataforma de Ensino e Aprendizagem, ou mais conhecido como PEA, surgiu da junção de um projeto de Conclusão de Curso, do aluno Isac Lafaeite, e da vontade de criar uma plataforma para ensinar os assuntos básicos para muitos jovens, e usuários de todas as idades, relacionados à matérias básicas como Português, História, Geografia e Biologia.
-                </p>
+                <h3> Classes Gramaticais </h3>
+                <p> Classes gramaticais ou categoria gramatical são as categorias de palavras distribuídas de acordo com sua natureza e função gramatical no discurso. Existem dez tipos de Classes gramaticais... </p>
             </div>
             <a href="./conteudos/portugues.php"><button class="ponteiro">Ver mais</button></a>
         </section>
@@ -53,9 +52,14 @@
         <section class="conteudo-textos">
             <div>
                 <h2>História</h2>
-                <p>
-                    Olá! Acredito que se chegou a esta página é porque deseja saber mais sobre o projeto, então aqui está. O projeto Plataforma de Ensino e Aprendizagem, ou mais conhecido como PEA, surgiu da junção de um projeto de Conclusão de Curso, do aluno Isac Lafaeite, e da vontade de criar uma plataforma para ensinar os assuntos básicos para muitos jovens, e usuários de todas as idades, relacionados à matérias básicas como Português, História, Geografia e Biologia.
-                </p>
+                <h3> Pré-História </h3>
+
+                <p> Pré-História é o período do passado da humanidade que vai do aparecimento do homem à invenção da escrita e que abrange milhões de anos. A origem da humanidade é objeto de pesquisas de arqueólogos,
+                paleontólogos, geólogos e biólogos. </p>
+
+                <h3> Divisão da Pré-História </h3>
+
+                <p> A Pré-História se divide em dois grandes períodos... </p>
             </div>
             <a href="./conteudos/historia.php"><button class="ponteiro">Ver mais</button></a>
         </section>
